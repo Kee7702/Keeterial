@@ -96,6 +96,8 @@ end
 
 ![Favicon](/assets/images/icon.png)
 
+### Discord Messages (stylized backups of discord channels)
+<div class="filedownload-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/embed/avatars/0.png" onerror="this.src='https://cdn.discordapp.com/embed/avatars/0.png'"><a>Username</a></div><div class="notes-container"><a>Blank chat message</a><a>linebreaks are also supported!</a></div><div class="filedownload-container nbtcontainer"><div class="filedownload"><i class="material-icons">downloading</i><a>File attachment</a></div><a>File contents if applicable.</a></div></div>
 
 ### Definition lists can be used with HTML syntax.
 

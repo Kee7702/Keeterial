@@ -16,11 +16,9 @@ html{
     overflow-x:hidden
 }
 .wrapper{
-    width:700px;
-    padding: 1px 20px 10px 20px;
+    width:auto;
+    padding: 1px 10px 10px 10px;
     margin:0 auto;
-    background:#fff1;
-    border-radius: 6px;
     color:#ccc
 }
 header{
@@ -146,40 +144,10 @@ img{
 .navigation-container a:hover{
     color:white
 }
-.keecapes-content-image:not(:last-of-type) {
-    margin-bottom:4px
-}
-.keecapes-content-image:not(:first-of-type) {
-    margin-left:8px
-}
-.keecapes-content-image {
-    display:inline-grid;
-    margin-right:-75%;
-    width:calc(100% - 8px);
-}
-.keecapes-content-image img {
-    image-rendering:pixelated;
-    object-fit: contain;
-    width:25%;
-    border-radius:10px;
-    aspect-ratio:10/16;
-    box-shadow:black 2px 2px 6px 0px;
-    background: white;
-}
 footer *{
     color:#ccc;
     text-decoration:none;
     font-family:Poppins;
-    margin:0
-}
-.home-content-image p,.keecapes-content-image p{
-    position:absolute;
-    padding:5px;
-    background:rgb(21,21,21,.6);
-    border-radius:10px 0 10px 0;
-    font-family:Poppins;
-    color:#ccc;
-    line-height:16px;
     margin:0
 }
 .filedownload-container .avatar-container img {

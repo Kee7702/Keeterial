@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+## Keeterial Demonstration Page
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
@@ -93,11 +94,7 @@ end
 - level 1 item
 
 ### Image
-
 ![Favicon](/assets/images/icon.png)
-
-### Discord Messages (stylized backups of discord channels)
-<div class="filedownload-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/embed/avatars/0.png" onerror="this.src='https://cdn.discordapp.com/embed/avatars/0.png'"><a>Username</a></div><div class="notes-container"><a>Blank chat message</a><a>linebreaks are also supported!</a></div><div class="filedownload-container nbtcontainer"><div class="filedownload"><i class="material-icons">downloading</i><a>File attachment</a></div><a>File contents if applicable.</a></div></div>
 
 ### Definition lists can be used with HTML syntax.
 
@@ -116,6 +113,21 @@ end
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
 
-```
-The final element.
-```
+## Keeterial UI
+
+### Content Groups
+<div class="home-content-container"><a class="home-content-image" href="./panorama-switcher"><img src="/assets/images/featuredimage.png" onerror="this.src='/assets/images/featuredimage.png'" alt="FeaturedImage"><p>Blank Content</p></a><a class="home-content-image" href="./panorama-switcher"><img src="/assets/images/featuredimage.png" onerror="this.src='/assets/images/featuredimage.png'" alt="FeaturedImage"><p>Blank Content</p></a></div>
+
+### Dropdowns
+<div class="changelog-container closeable"><div><i class="material-icons" style="margin-top: 8px;">blocks</i><h3 style="margin-top: 8px;">Dropdowns</h3><i class="material-icons" style="margin-top: 8px;"></i></div><div style="display: inherit;"><h4>Any elements can be in a dropdown. If javascript is disabled it will just appear as a section and everything will show. The icon can be anything from the material icons set, but cannot be removed as the script relies on it being there.</h4></div></div>
+
+### Message Logs
+<div class="filedownload-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/embed/avatars/0.png" onerror="this.src='https://cdn.discordapp.com/embed/avatars/0.png'"><a>Username</a></div><div class="notes-container"><a>Blank chat message</a><a>linebreaks are also supported!</a></div><div class="filedownload-container nbtcontainer"><div class="filedownload"><i class="material-icons">downloading</i><a>File attachment</a></div><a>File contents if applicable.</a></div></div>
+
+### Downloads
+<div class="home-content-container"><a class="home-content-container" style="border-radius:8px;background: #222d;padding:8px;color:#ccc;display:inline-block;margin:4px;line-height: 24px;text-decoration: none;"><p class="dreamsdb infotitle">Name</p><p class="dreamsdb infostats" style="margin-left:8px">Size</p></a><a class="home-content-container" style="border-radius:8px;background: #222d;padding:8px;color:#ccc;display:inline-block;margin:4px;line-height: 24px;text-decoration: none;"><p class="dreamsdb infotitle">Name</p><p class="dreamsdb infostats" style="margin-left:8px">Size</p></a></div>
+
+### Description Container
+<div class="changelog-container"><h4 style="margin-bottom: 4px;">Can include changelogs if applicable, as well as dropdowns, images, and text.</h4><i class="material-icons">text_snippet</i><h3 id="changelog">Changelog</h3><h4>Added this to keeterial</h4><div class="changelog-container closeable" style="background:#222;padding-top: 0;"><div><i class="material-icons" style="margin-top: 8px;">folder</i><h3 style="margin-top: 8px;">Another Dropdown</h3><i class="material-icons" style="margin-top: 8px;"></i></div><div style="display: inherit;"><img src="/assets/images/iconerr.png" style="max-height: 192px;display: block;width: auto;max-width: 100%;margin-top: 4px;"></div></div></div>
+
+### It is worth noting that many things can be reworked into whatever works for your intended layout, so although this isn't all you may see on Keeterial sites, these simple elements are the base for which the websites are built off of.

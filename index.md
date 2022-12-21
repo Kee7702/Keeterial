@@ -115,8 +115,8 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 ## Keeterial UI
 
-### Content Groups
-<div class="home-content-container"><a class="home-content-image" href="./panorama-switcher"><img src="/assets/images/featuredimage.png" onerror="this.src='/assets/images/featuredimage.png'" alt="FeaturedImage"><p>Blank Content</p></a><a class="home-content-image" href="./panorama-switcher"><img src="/assets/images/featuredimage.png" onerror="this.src='/assets/images/featuredimage.png'" alt="FeaturedImage"><p>Blank Content</p></a></div>
+### Card Grid UI
+<div class="home-content-container"><a class="home-content-image" href="./another-page.html"><img src="/assets/images/featuredimage.png" onerror="this.src='/assets/images/featuredimage.png'" alt="FeaturedImage"><p>Blank Content</p></a><a class="home-content-image" href="./another-page.html"><img src="/assets/images/featuredimage.png" onerror="this.src='/assets/images/featuredimage.png'" alt="FeaturedImage"><p>Blank Content</p></a></div>
 
 ### Dropdowns
 <div class="changelog-container closeable"><div><i class="material-icons">build</i><h3>Dropdowns</h3><i class="material-icons"></i></div><div style="display: inherit;"><h4>Any elements can be in a dropdown. If javascript is disabled it will just appear as a section and everything will show. The icon can be anything from the material icons set, but cannot be removed as the script relies on it being there.</h4></div></div>

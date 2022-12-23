@@ -121,9 +121,6 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ### Dropdowns
 <div class="changelog-container closeable"><div><i class="material-icons">build</i><h3>Dropdowns</h3><i class="material-icons"></i></div><div style="display: inherit;"><h4>Any elements can be in a dropdown. If javascript is disabled it will just appear as a section and everything will show. The icon can be anything from the material icons set, but cannot be removed as the script relies on it being there.</h4></div></div>
 
-### Message Logs
-<div class="filedownload-container"><div class="avatar-container"><img src="https://cdn.discordapp.com/embed/avatars/0.png" onerror="this.src='https://cdn.discordapp.com/embed/avatars/0.png'"><a>Username</a></div><div class="notes-container"><a>Blank chat message</a><a>linebreaks are also supported!</a></div><div class="filedownload-container nbtcontainer"><div class="filedownload"><i class="material-icons">downloading</i><a>File attachment</a></div><a>File contents if applicable.</a></div></div>
-
 ### Downloads
 <div class="home-content-container"><a class="home-content-container" style="border-radius:8px;background: #222d;padding:8px;color:#ccc;display:inline-block;margin:4px;line-height: 24px;text-decoration: none;"><p class="dreamsdb infotitle">Name</p><p class="dreamsdb infostats" style="margin-left:8px">Size</p></a><a class="home-content-container" style="border-radius:8px;background: #222d;padding:8px;color:#ccc;display:inline-block;margin:4px;line-height: 24px;text-decoration: none;"><p class="dreamsdb infotitle">Name</p><p class="dreamsdb infostats" style="margin-left:8px">Size</p></a></div>
 

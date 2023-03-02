@@ -26,6 +26,7 @@
           {% if link.icon %}
             <a class="material-icons" href="{{ link.href }}">{{ link.icon }}</a>
               {% elsif link.image %}<a class="material-icons" href="{{ link.href }}"><img src="{{ link.image }}"></a>
+            {% endif %}
           {% endfor %}
         {% endif %}
         {% if page.nav %}
@@ -33,6 +34,7 @@
             {% if link.icon %}
               <a class="material-icons" href="{{ link.href }}">{{ link.icon }}</a>
                 {% elsif link.image %}<a class="material-icons" href="{{ link.href }}"><img src="{{ link.image }}"></a>
+            {% endif %}
           {% endfor %}
         {% endif %}
       </div>

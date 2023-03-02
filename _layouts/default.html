@@ -22,8 +22,8 @@
     <div class="wrapper">{% include global-announcement-header.html %}<div class="navigation-container">
         <header>{%- include global-title-header.html -%}</header>
       {% for link in site.nav %}
-        {% for linkstats.href in link %}
-          {{ linkstats.href }}
+        {% for linkstats in link.href %}
+          {{ linkstats }}
         {% endfor %}
       {% endfor %}
       {% if site.nav %}

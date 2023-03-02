@@ -22,7 +22,9 @@
     <div class="wrapper">{% include global-announcement-header.html %}<div class="navigation-container">
         <header>{%- include global-title-header.html -%}</header>
       {% for link in site.nav %}
-        {{ link[1].href }}
+        {% for linkstats in link %}
+          {{ linkstats }}
+        {% endfor %}
       {% endfor %}
       {% if site.nav %}
         {% for link in site.nav %}

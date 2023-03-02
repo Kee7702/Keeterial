@@ -23,7 +23,7 @@
         <header>{%- include global-title-header.html -%}</header>
       {% for link in site.nav %}
         {% for linkstats in link %}
-          {{ linkstats[0] }}
+          {{ linkstats.href }}
         {% endfor %}
       {% endfor %}
       {% if site.nav %}

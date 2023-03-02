@@ -9,4 +9,4 @@ nav:
     icon: build
     href: https://nicknameopg.github.io/NicknameDev/assets/images/icon.png
 # footer: Keeterial is a material-inspired Pages theme, built for Kee Projects and similar pages.
-build_info: false
+build_info: true

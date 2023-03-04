@@ -23,17 +23,17 @@
         <header>{%- include global-title-header.html -%}{% for link in site.nav %}{{ link[1] }}{% endfor %}
       {% if site.nav %}
         {% for link in site.nav %}
-          {% if {{ link[3] }} == 'icon' %}
+          {% if link[3] == "icon" %}
             <a class="material-icons" href="{{ link[1] }}">{{ link[2] }}</a>
-              {% elsif {{ link[3] }} == 'image' %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>
+              {% elsif link[3] == "image" %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>
             {% endif %}
           {% endfor %}
         {% endif %}
         {% if page.nav %}
           {% for link in page.nav %}
-            {% if link[3] == 'icon' %}
+            {% if link[3] == "icon" %}
               <a class="material-icons" href="{{ link[1] }}">{{ link[2] }}</a>
-                {% elsif link[3] == 'image' %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>
+                {% elsif link[3] == "image" %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>
             {% endif %}
           {% endfor %}
         {% endif %}

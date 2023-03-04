@@ -28,17 +28,17 @@
       {% endfor %}
       {% if site.nav %}
         {% for link in site.nav %}
-          {% if link[icon] %}
-            <a class="material-icons" href="{{ link[href] }}">{{ link[icon] }}</a>
-              {% elsif link[image] %}<a class="material-icons" href="{{ link[href] }}"><img src="{{ link[image] }}"></a>
+          {% if link[2]=="icon" %}
+            <a class="material-icons" href="{{ link[0] }}">{{ link[1] }}</a>
+              {% elsis link[2]=="image" %}<a class="material-icons" href="{{ link[0] }}"><img src="{{ link[1] }}"></a>
             {% endif %}
           {% endfor %}
         {% endif %}
         {% if page.nav %}
           {% for link in page.nav %}
-            {% if link[icon] %}
-              <a class="material-icons" href="{{ link[href] }}">{{ link[icon] }}</a>
-                {% elsif link[image] %}<a class="material-icons" href="{{ link[href] }}"><img src="{{ link[image] }}"></a>
+            {% if link[2]=="icon" %}
+              <a class="material-icons" href="{{ link[0] }}">{{ link[1] }}</a>
+                {% elsif link[2]=="image" %}<a class="material-icons" href="{{ link[0] }}"><img src="{{ link[1] }}"></a>
             {% endif %}
           {% endfor %}
         {% endif %}

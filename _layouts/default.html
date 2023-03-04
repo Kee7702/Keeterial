@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="wrapper">{% include global-announcement-header.html %}<div class="navigation-container">
-        <header>{%- include global-title-header.html -%}{% for link in site.nav %}{{ link }}{% endfor %}
+        <header>{%- include global-title-header.html -%}{% for link in site.nav %}{{ link[1] }}{% endfor %}
       {% if site.nav %}
         {% for link in site.nav %}
           {% if link[3] == 'icon' %}

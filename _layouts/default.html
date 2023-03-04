@@ -20,20 +20,21 @@
   </head>
   <body>
     <div class="wrapper">{% include global-announcement-header.html %}<div class="navigation-container">
-        <header>{%- include global-title-header.html -%}{% for link in site.nav %}{{ link[1] }}{% endfor %}
+        <header>{%- include global-title-header.html -%}
       {% if site.nav %}
         {% for link in site.nav %}
-          {% if link[3] == "icon" %}
+          {% assign link_type = link[3] %}
+          {% if link_type == "icon" %}
             <a class="material-icons" href="{{ link[1] }}">{{ link[2] }}</a>
-              {% elsif link[3] == "image" %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>
+              {% elsif link_type == "image" %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>
             {% endif %}
           {% endfor %}
         {% endif %}
         {% if page.nav %}
           {% for link in page.nav %}
-            {% if link[3] == "icon" %}
+            {% if link_type == "icon" %}
               <a class="material-icons" href="{{ link[1] }}">{{ link[2] }}</a>
-                {% elsif link[3] == "image" %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>
+                {% elsif link_type == "image" %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>
             {% endif %}
           {% endfor %}
         {% endif %}

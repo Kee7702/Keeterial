@@ -23,7 +23,7 @@
         <header>{%- include global-title-header.html -%}
       {% if site.nav %}
         {% for link in site.nav %}
-          {% assign link_type = link[3] %}
+          {% capture link_type %}{{ link[3] }}{% endcapture %}
           {% if link_type == "icon" %}
             <a class="material-icons" href="{{ link[1] }}">{{ link[2] }}</a>
               {% elsif link_type == "image" %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>

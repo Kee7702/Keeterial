@@ -30,7 +30,7 @@
         {% for link in site.nav %}
           {% if link[2]=="icon" %}
             <a class="material-icons" href="{{ link[0] }}">{{ link[1] }}</a>
-              {% elsis link[2]=="image" %}<a class="material-icons" href="{{ link[0] }}"><img src="{{ link[1] }}"></a>
+              {% elsif link[2]=="image" %}<a class="material-icons" href="{{ link[0] }}"><img src="{{ link[1] }}"></a>
             {% endif %}
           {% endfor %}
         {% endif %}

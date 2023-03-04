@@ -3,12 +3,12 @@ description: Keeterial is a material-inspired Pages theme, built for Kee Project
 remote_theme: Kee7702/Keeterial
 nav:
   test:
-  - "https://nicknameopg.github.io/NicknameDev/assets/images/icon.png"
-  - "https://nicknameopg.github.io/NicknameDev/assets/images/icon.png"
-  - "image"
+  - h: "https://nicknameopg.github.io/NicknameDev/assets/images/icon.png"
+  - i: "https://nicknameopg.github.io/NicknameDev/assets/images/icon.png"
+  - t: "image"
   test2:
-  - "https://nicknameopg.github.io/NicknameDev/assets/images/icon.png"
-  - "build"
-  - "icon"
+  - h: "https://nicknameopg.github.io/NicknameDev/assets/images/icon.png"
+  - i: "build"
+  - t: "icon"
 footer: Keeterial is a material-inspired Pages theme, built for Kee Projects and similar pages.
 build_info: true

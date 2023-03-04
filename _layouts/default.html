@@ -23,9 +23,9 @@
         <header>{%- include global-title-header.html -%}
       {% if site.nav %}
         {% for link in site.nav %}
-          {% if link[2] == 'icon' %}
-            <a class="material-icons" href="{{ link[0] }}">{{ link[1] }}</a>
-              {% elsif link[2] == 'image' %}<a class="material-icons" href="{{ link[0] }}"><img src="{{ link[1] }}"></a>
+          {% if link[3] == 'icon' %}
+            <a class="material-icons" href="{{ link[1] }}">{{ link[2] }}</a>
+              {% elsif link[3] == 'image' %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>
             {% endif %}
           {% endfor %}
         {% endif %}

@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="wrapper">{% include global-announcement-header.html %}<div class="navigation-container">
-        <header>{% include global-title-header.html %}{{ site.nav }}{% for link in site.nav %}{% if link[3] == "icon" %}<a class="material-icons" href="{{ link[1] }}">{{ link[2] }}</a>{% elsif link[3] == "image" %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>{% endif %}{% endfor %}{% for link in page.nav %}{% if link[3] == "icon" %}<a class="material-icons" href="{{ link[1] }}">{{ link[2] }}</a>{% elsif link[3] == "image" %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>{% endif %}{% endfor %}</div>
+        <header>{% include global-title-header.html %}{% for link in site.nav %}{{ link[1] }}{% endfor %}{% for link in site.nav %}{% if link[3] == "icon" %}<a class="material-icons" href="{{ link[1] }}">{{ link[2] }}</a>{% elsif link[3] == "image" %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>{% endif %}{% endfor %}{% for link in page.nav %}{% if link[3] == "icon" %}<a class="material-icons" href="{{ link[1] }}">{{ link[2] }}</a>{% elsif link[3] == "image" %}<a class="material-icons" href="{{ link[1] }}"><img src="{{ link[2] }}"></a>{% endif %}{% endfor %}</div>
       <section>{{ content }}</section>
       {% if site.build_info %}
       <footer>{% if site.footer %}<h4>{{ site.footer }}</h4>{% endif %}<h4>Page built with {{ site.github.build_revision | slice: 0,7 }} at {{ site.github.repository_name }}</h4>

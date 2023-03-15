@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="wrapper">{% include global-announcement-header.html %}<div class="navigation-container">
-        <header>{% include global-title-header.html %}{{ site.nav }}{{ page.nav }}</div>
+      <header>{% include global-title-header.html %}</header>{{ site.nav }}{{ page.nav }}</div>
       <section>{{ content }}</section>
       {% if site.build_info %}
       <footer>{% if site.footer %}<h4>{{ site.footer }}</h4>{% endif %}<h4>Page built with {{ site.github.build_revision | slice: 0,7 }} at {{ site.github.repository_name }}</h4>

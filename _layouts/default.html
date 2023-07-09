@@ -20,11 +20,10 @@
   </head>
   <body>
     <div class="wrapper">
-      {% for nav in site.data.navigation %}
-        <a class="material-icons" href="{{ nav.link }}" style="margin-right:0">{{ nav.icon }}</a>{% endfor %}
-{% if site.data.announcement %}<div class="global-announcement-container">{% for post in site.data.announcement %}<div class="global-post-container"><a class="global-post-label">{{ post.title }}</a><a class="global-post-icon">{{ post.icon }}</a><a class="global-post-details">{{ post.details }}</a></div>
+    {% if site.data.announcement %}<div class="global-announcement-container">{% for post in site.data.announcement %}<div class="global-post-container"><a class="global-post-label">{{ post.title }}</a><a class="global-post-icon">{{ post.icon }}</a><a class="global-post-details">{{ post.details }}</a></div>
 {% endfor %}</div>{% endif %}<div class="navigation-container">
-      <header>{% include global-title-header.html %}</header>{{ site.nav }}{{ page.nav }}</div>
+      <header>{% include global-title-header.html %}</header>{% for nav in site.data.navigation %}
+        <a class="material-icons" href="{{ nav.link }}" style="margin-right:0">{{ nav.icon }}</a>{% endfor %}</div>
       <section>{{ content }}</section>
       {% if site.build_info %}
       <footer>{% if site.footer %}<h4>{{ site.footer }}</h4>{% endif %}<h4>Page built with {{ site.github.build_revision | slice: 0,7 }} at {{ site.github.repository_name }}</h4>

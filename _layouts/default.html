@@ -19,7 +19,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes" />{% include head-custom.html %}
   </head>
   <body>
-    <div class="wrapper">{% include global-announcement-header.html %}<div class="navigation-container">
+    <div class="wrapper">
+      {% for nav in site.data.navigation %}
+        <a class="material-icons" href="{{ nav.link }}" style="margin-right:0">{{ nav.icon }}</a>{% endfor %}
+{% if site.data.announcement %}<div class="global-announcement-container">{% for post in site.data.announcement %}<div class="global-post-container"><a class="global-post-label">{{ post.title }}</a><a class="global-post-icon">{{ post.icon }}</a><a class="global-post-details">{{ post.details }}</a></div>
+{% endfor %}</div>{% endif %}<div class="navigation-container">
       <header>{% include global-title-header.html %}</header>{{ site.nav }}{{ page.nav }}</div>
       <section>{{ content }}</section>
       {% if site.build_info %}

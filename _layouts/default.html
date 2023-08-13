@@ -14,7 +14,7 @@
     <meta property="twitter:title" content="{{ page.title }}">{{ page.headInsert }}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes" />{% include head-custom.html %}
-  </head><body><div class="wrapper"><div class="navigation-container" style="box-shadow:#111 0px 0px 12px 2px;z-index:2;position:relative"><header>{% include global-title-header.html %</header></div>
+  </head><body><div class="wrapper"><div class="navigation-container" style="box-shadow:#111 0px 0px 12px 2px;z-index:2;position:relative"><header>{% include global-title-header.html %}</header></div>
       {% if site.data.navigation %}<div class="navigation-container"style="box-shadow:#111 0px 0px 12px 2px;position:absolute;z-index:1;height:calc(100% - 80px);overflow-y:auto"><div style="display:block">{% for nav in site.data.navigation %}        <a class="material-icons" href="{{ nav.link }}" style="margin-right:0">{{ nav.icon }}</a>{% endfor %}</div>{% endif %}</div>
       <section style="height:calc(100% - 80px);{% if site.data.navigation %}width:calc(100% - 84px);{% endif %}margin-left:46px;overflow-y:auto;position:absolute">{{ content }}</section></div>    <script>
       Array.from(document.getElementsByClassName('closeable')).map(p => p.children[1].style.display = "none");

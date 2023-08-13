@@ -128,5 +128,3 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 <div class="changelog-container"><h4 style="margin-bottom: 4px;">Can include changelogs if applicable, as well as dropdowns, images, and text.</h4><i class="material-icons">text_snippet</i><h3 id="changelog">Changelog</h3><h4>Added this to keeterial</h4><div class="changelog-container closeable" style="background:#222"><div><i class="material-icons">folder</i><h3>Another Dropdown</h3><i class="material-icons"></i></div><div style="display: inherit;"><img src="/assets/images/iconerr.png" style="max-height: 192px;display: block;width: auto;max-width: 100%;margin-top: 4px;"></div></div></div>
 
 ### It is worth noting that many things can be reworked into whatever works for your intended layout, so although this isn't all you may see on Keeterial sites, these simple elements are the base for which the websites are built off of.
-
-### Also note that this version of Keeterial is currently experimental

@@ -1,6 +1,4 @@
-<!doctype html>
-<html lang="en-US" class="notranslate">
-  <head>
+<html lang="en-US" class="notranslate" style="overflow:hidden;background:#111"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta data-n-head="ssr" data-hid="og:image" name="og:image" content="{{ page.image | default:"/assets/images/icon.png" }}">
@@ -16,23 +14,8 @@
     <meta property="twitter:title" content="{{ page.title }}">{{ page.headInsert }}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes" />{% include head-custom.html %}
-  </head>
-  <body>
-    <div class="wrapper">
-    {% if site.data.announcement %}<div class="global-announcement-container">{% for post in site.data.announcement %}<div class="global-post-container"><a class="global-post-label">{{ post.title }}</a><a class="global-post-icon">{{ post.icon }}</a><a class="global-post-details">{{ post.details }}</a></div>
-{% endfor %}</div>{% endif %}<div class="navigation-container">
-      <header>{% include global-title-header.html %}</header>{% for nav in site.data.navigation %}
-        <a class="material-icons" href="{{ nav.link }}" style="margin-right:0">{{ nav.icon }}</a>{% endfor %}</div>
-      <section>{{ content }}</section>
-      {% if site.build_info %}
-      <footer>{% if site.footer %}<h4>{{ site.footer }}</h4>{% endif %}<h4>Page built with {{ site.github.build_revision | slice: 0,7 }} at {{ site.github.repository_name }}</h4>
-      </footer>
-      {% elsif site.footer %}
-      <footer>
-        <h4>{{ site.footer }}</h4>
-      </footer>{% endif %}
-    </div>
-    <script>
+  </head><body><div class="wrapper"><div class="navigation-container" style="box-shadow:#111 0px 0px 12px 2px;z-index:2;position:relative"><header><a>Zaxno Panel</a><a class="material-icons" style="font-size:36px"></a></header></div>{ % if site.data.navigation % }<div class="navigation-container"style="box-shadow:#111 0px 0px 12px 2px;position:absolute;z-index:1;height:calc(100% - 80px);overflow-y:auto"><div style="display:block">{% for nav in site.data.navigation %}
+        <a class="material-icons" href="{{ nav.link }}" style="margin-right:0">{{ nav.icon }}</a>{% endfor %}</div>{% endif %}</div><section style="height:calc(100% - 80px);{% if site.data.navigation %}width:calc(100% - 84px);{ % endif % }margin-left:46px;overflow-y:auto;position:absolute">{{ content }}</section></div>    <script>
       Array.from(document.getElementsByClassName('closeable')).map(p => p.children[1].style.display = "none");
       Array.from(document.getElementsByClassName('closeable')).map(p => p.children[0].children[2].textContent = "arrow_drop_down");
       Array.from(document.getElementsByClassName('closeable')).map(p => p.children[0].addEventListener("click", function onclick(event) {
@@ -49,6 +32,4 @@
       if (new URLSearchParams(window.location.search).get('dl') && document.getElementsByClassName('home-content-container')[0].children[new URLSearchParams(window.location.search).get('dl')].href) {
         window.location.href = document.getElementsByClassName('home-content-container')[0].children[new URLSearchParams(window.location.search).get('dl')].href
       }
-    </script>
-  </body>
-</html>
+    </script></body></html>

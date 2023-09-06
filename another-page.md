@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: default_test
 navigation:
- - test: 'test'
-   test2: 'test2'
+- link: 'https://projects.kee7702.tk/'
+  icon: ''
 ---
 
 ## Welcome to another page

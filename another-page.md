@@ -1,9 +1,8 @@
 ---
 layout: default
-nav:
-  link1:
-    icon: terminal
-    href: /
+navigation:
+ - test: 'test'
+   test2: 'test2'
 ---
 
 ## Welcome to another page

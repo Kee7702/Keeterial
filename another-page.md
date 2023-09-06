@@ -1,8 +1,5 @@
 ---
 layout: default
-navigation:
-- link: 'https://projects.kee7702.tk/'
-  icon: ''
 ---
 
 ## Welcome to another page

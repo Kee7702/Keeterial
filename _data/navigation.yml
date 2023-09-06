@@ -1,2 +1,6 @@
+- link: '/'
+  icon: ''
+- link: '../'
+  icon: ''
 - link: 'https://projects.kee7702.tk/'
-  icon: 'construction'
+  icon: ''

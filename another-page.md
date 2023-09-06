@@ -1,5 +1,5 @@
 ---
-layout: default_test
+layout: default
 navigation:
 - link: 'https://projects.kee7702.tk/'
   icon: ''
